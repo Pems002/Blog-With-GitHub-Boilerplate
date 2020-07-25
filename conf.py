@@ -30,14 +30,19 @@ key_words = ['Blog', 'Sean', 'Maverick']
 language = 'zh-CN'
 external_links = [
     {
-        "name": "Home Page",
+        "name": "个人主页",
         "url": "https://www.imsean.cn",
-        "brief": "我的个人主页。"
+        "brief": "Sean is here!"
     },
     {
         "name": "Notion页",
         "url": "https://home.imsean.cn",
         "brief": "Notion Work Space."
+    },
+    {
+        "name": "Blog项目仓库",
+        "url": "https://github.com/Pems002/Blog",
+        "brief": "托管在Github上的项目。"
     }
 ]
 nav = [
@@ -48,12 +53,12 @@ nav = [
     },
     {
         "name": "归档",
-        "url": "${site_prefix}archives/",
+        "url": "${site_prefix}archives",
         "target": "_self"
     },
     {
         "name": "关于",
-        "url": "${site_prefix}about/",
+        "url": "${site_prefix}who-im-i",
         "target": "_self"
     }
 ]
@@ -73,11 +78,6 @@ social_links = [
         "name": "instagram",
         "url": "https://www.instagram.com/pems002",
         "icon": "gi gi-instagram"
-    },
-    {
-        "name": "Github",
-        "url": "https://github.com/pems002",
-        "icon": "gi gi-github"
     }
 ]
 
