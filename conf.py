@@ -9,7 +9,6 @@ build_dir = "../dist/"
 index_page_size = 10
 archives_page_size = 20
 template = {
-template = {
     "name": "Galileo",
     "type": "git",
     "url": "https://github.com/Pems002/Maverick-Theme-Galileo.git",
