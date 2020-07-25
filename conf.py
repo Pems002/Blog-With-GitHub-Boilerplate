@@ -3,7 +3,7 @@
 """
 
 # For Maverick
-site_prefix = "/Blog/"
+site_prefix = "/"
 source_dir = "../src/"
 build_dir = "../dist/"
 index_page_size = 10
@@ -30,14 +30,14 @@ key_words = ['Blog', 'Sean', 'Maverick']
 language = 'zh-CN'
 external_links = [
     {
-        "name": "Maverick",
-        "url": "https://github.com/AlanDecode/Maverick",
-        "brief": "🏄‍ Go My Own Way."
+        "name": "Home Page",
+        "url": "https://www.imsean.cn",
+        "brief": "我的个人主页。"
     },
     {
-        "name": "三無計劃",
-        "url": "https://www.imalan.cn",
-        "brief": "熊猫小A的主页。"
+        "name": "Notion页",
+        "url": "https://home.imsean.cn",
+        "brief": "Notion Work Space."
     }
 ]
 nav = [
@@ -60,19 +60,24 @@ nav = [
 
 social_links = [
     {
+        "name": "Weibo",
+        "url": "https://https://weibo.com/u/3225834177",
+        "icon": "gi gi-weibo"
+    },
+    {
         "name": "Twitter",
-        "url": "https://twitter.com/AlanDecode",
+        "url": "https://twitter.com/pems002",
         "icon": "gi gi-twitter"
     },
     {
-        "name": "GitHub",
-        "url": "https://github.com/AlanDecode",
-        "icon": "gi gi-github"
+        "name": "instagram",
+        "url": "https://www.instagram.com/pems002",
+        "icon": "gi gi-instagram"
     },
     {
-        "name": "Weibo",
-        "url": "https://weibo.com/5245109677/",
-        "icon": "gi gi-weibo"
+        "name": "Github",
+        "url": "https://github.com/pems002",
+        "icon": "gi gi-github"
     }
 ]
 
