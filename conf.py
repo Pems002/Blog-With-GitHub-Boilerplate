@@ -81,6 +81,15 @@ social_links = [
     }
 ]
 
+valine = {
+    "enable": True,
+    "el": '#vcomments',
+    "appId": "MW3rej0gI05buDtSpAN15yi2-gzGzoHsz",
+    "appKey": "g8BYYF25hHDXLNaTpptqumwL",
+    "visitor": True,
+    "recordIP": True
+}
+
 head_addon = r'''
 <link rel="icon" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@source/src/static/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@source/src/static/favicon.ico" type="image/x-icon" />
