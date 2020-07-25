@@ -53,12 +53,12 @@ nav = [
     },
     {
         "name": "归档",
-        "url": "${site_prefix}archives",
+        "url": "${site_prefix}archives/",
         "target": "_self"
     },
     {
         "name": "关于",
-        "url": "${site_prefix}who-im-i",
+        "url": "${site_prefix}who-im-i/",
         "target": "_self"
     }
 ]
@@ -82,6 +82,8 @@ social_links = [
 ]
 
 head_addon = r'''
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@source/src/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@source/src/favicon.ico" type="image/x-icon" />
 <meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
 '''
