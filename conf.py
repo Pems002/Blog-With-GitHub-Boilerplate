@@ -67,7 +67,7 @@ nav = [
 social_links = [
     {
         "name": "Weibo",
-        "url": "https://https://weibo.com/u/3225834177",
+        "url": "https://weibo.com/u/3225834177",
         "icon": "gi gi-weibo"
     },
     {
