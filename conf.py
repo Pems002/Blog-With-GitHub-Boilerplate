@@ -59,7 +59,7 @@ nav = [
     },
     {
         "name": "关于我",
-        "url": "${site_prefix}who-im-i/",
+        "url": "${site_prefix}who-am-i/",
         "target": "_self"
     }
 ]
