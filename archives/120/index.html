@@ -8,32 +8,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keywords" content="Blog,Sean,Maverick" />
     <meta name="generator" content="Maverick 1.1" />
-    <meta name="template" content="Galileo" />
-    <link rel="alternate" type="application/rss+xml" title="Sean's Blog &raquo; RSS 2.0" href="/feed/index.xml" />
-    <link rel="alternate" type="application/atom+xml" title="Sean's Blog &raquo; ATOM 1.0" href="/feed/atom/index.xml" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/galileo-6eb818ccb7.css">
+    <meta name="template" content="Kepler" />
+    <link rel="alternate" type="application/rss+xml" title="Sean is here! - Logs &raquo; RSS 2.0" href="/feed/index.xml" />
+    <link rel="alternate" type="application/atom+xml" title="Sean is here! - Logs &raquo; ATOM 1.0" href="/feed/atom/index.xml" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/kepler-426969802d.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/ExSearch/ExSearch-182e5a8868.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/katex.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.10.0/dist/tocbot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
     <script>
         var ExSearchConfig = {
             root: "",
             api: "https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/4e32bea4a2cbfe5f58f52103ba78aca7.json"
         }
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            if(/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)){
+                document.body.classList.add('safari')
+            }else{
+                document.body.classList.remove('safari')
+            }
+        });
+    </script>
     
-<title>Spotify使用分享/歌单导入 - Sean's Blog</title>
+<title>Spotify使用分享/歌单导入 - Sean is here! - Logs</title>
 <meta name="author" content="Sean" />
 <meta name="description" content="良心“声破天”在线畅想音乐世界" />
-<meta property="og:title" content="Spotify使用分享/歌单导入 - Sean's Blog" />
+<meta property="og:title" content="Spotify使用分享/歌单导入 - Sean is here! - Logs" />
 <meta property="og:description" content="良心“声破天”在线畅想音乐世界" />
-<meta property="og:site_name" content="Sean's Blog" />
+<meta property="og:site_name" content="Sean is here! - Logs" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/archives/120/" />
 <meta property="og:image" content="https://developer.spotify.com/assets/branding-guidelines/logo@2x.png" />
 <meta property="article:published_time" content="2020-01-21T20:15:00-00.00" />
-<meta name="twitter:title" content="Spotify使用分享/歌单导入 - Sean's Blog" />
+<meta name="twitter:title" content="Spotify使用分享/歌单导入 - Sean is here! - Logs" />
 <meta name="twitter:description" content="良心“声破天”在线畅想音乐世界" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:image" content="https://developer.spotify.com/assets/branding-guidelines/logo@2x.png" />
@@ -47,46 +56,89 @@
 
     </head>
     
-    <body>
-        
-        <div class="container">
-            <header id="ga-header">
-                <div first>
-                    <aside id="ga-brand">
-                        <h1 class="brand"><a class="no-style" href="/">Sean's Blog</a></h1>
-                        <p>乘风破浪</p>
-                    </aside>
-                </div>
-                <div second id="ga-nav">
-                    <nav class="navs">
-                        <ul><li><a class="ga-highlight" href="/" target="_self">首页</a></li><span class="separator">·</span><li><a class="ga-highlight" href="/archives/" target="_self">归档</a></li><span class="separator">·</span><li><a class="ga-highlight" href="/who-am-i/" target="_self">关于我</a></li><span class="separator">·</span><li><a href="#" target="_self" class="search-form-input ga-highlight">搜索</a></li></ul>
+    <body class="content">
+        <header>
+            <div class="container">
+                <section>
+                    <a href="/"><img src="https://cdn.jsdelivr.net/gh/Pems002/Blog@source/src/static/logo.JPG">Sean is here! - Logs</a>
+                </section>
+                <section>
+                    <nav>
+                        <ul>
+                            
+                                <li><a href="https://www.imsean.cn" target="_blank">个人主页</a></li>
+                            
+                                <li><a href="https://home.imsean.cn" target="_blank">Notion页</a></li>
+                            
+                                <li><a href="https://github.com/Pems002/Blog" target="_blank">Blog项目仓库</a></li>
+                            
+                        </ul>
                     </nav>
-                </div>
-            </header>
-            <div class="wrapper">
+                </section>
+    
+                <section>
+                    <a hidden class="toggle-toc" target="_self" href="javascript:void(0)" onclick="$(body).toggleClass('toc-open')"><i class="fa fa-align-right"></i></a>
+                    <a hidden class="toggle-navbar" target="_self" href="javascript:void(0)" onclick="$(body).toggleClass('navbar-open')"><i class="fa fa-indent"></i></a>
+                    <button class="search-form-input"><i class="fa fa-search"></i></button>
+                </section>
+            </div>
+        </header>
+
+        <main>
+            <div id="pjax-container" class="container">
+                <aside id="navbar" class="no-scrollbar">
+                    
+                    <section class="sidebar-nav">
+                        
+                            <div class="None" ><span><a href="/">首页</a></span></div>
+                        
+                            <div class="None" ><span><a href="/archives/">归档</a></span></div>
+                        
+                            <div class="None" ><span><a href="/who-am-i/">关于我</a></span></div>
+                        
+                    </section>
+                    
+                    <section>
+                        
+    <div class=" "><span><a href="/category/默认分类/">默认分类</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/recent-overview/">近期的概况</a></li><li class=""><a href="/archives/begin-the-new-site/">船新的站点 不变的还是我嘻嘻</a></li><li class=""><a href="/archives/hello-world-hello-maverick/">Hello World! Hello Maverick!</a></li></ul></div><div class=" "><span><a href="/category/Code/">Code</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/quantumult-toggle-vpn-ico/">Quantumult-VPN标识显示/隐藏</a></li><li class=""><a href="/archives/Access-to-Github/">正常访问/加速Github</a></li><li class=""><a href="/archives/netease-music-http-proxy/">网易云音乐HTTP代理</a></li><li class=""><a href="/archives/gray-style/">站内黑白效果</a></li><li class=""><a href="/archives/first-depoly-host/">自有ECS配置使用Proxy</a></li></ul></div><div class=" "><span><a href="/category/闲谈/">闲谈</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/214/">Typecho插件分享</a></li><li class=""><a href="/archives/196/">关于…最近？</a></li><li class=""><a href="/archives/happy-seventeen-brithday/">Happy Seventeen Birthday！</a></li><li class=""><a href="/archives/166/">200天纪念😜</a></li><li class=""><a href="/archives/163/">《歌手》终是一部综艺节目</a></li><li class=""><a href="/archives/130/">究竟什么对你有所感触？</a></li><li class=""><a href="/archives/128/">最近看番小见解</a></li><li class=""><a href="/archives/101/">告别19 踏入新的20</a></li><li class=""><a href="/archives/100/">高质量的内容规划</a></li><li class=""><a href="/archives/87/">没什么主题</a></li><li class=""><a href="/archives/86/">差强人意</a></li><li class=""><a href="/archives/68/">强推：《奇葩说》第六季</a></li><li class=""><a href="/archives/6/">100天辣庆祝一下</a></li><li class=""><a href="/archives/4/">这么久不见，我又来惹！</a></li><li class=""><a href="/archives/travelog-02/">旅行游记 Day2/3</a></li><li class=""><a href="/archives/Travelog-01/">旅行游记 Day1</a></li><li class=""><a href="/archives/1/">博客站成啦</a></li></ul></div><div class=" "><span><a href="/category/Maverick/">Maverick</a><button class="toggle_sidebar fa"></button></span><ul><div class=" "><span><a href="/category/about/">about</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/about/">关于这里..?</a></li></ul></div><li class=""><a href="/archives/typography/">Hello World!</a></li></ul></div><div class="open "><span><a href="/category/学记/">学记</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/180/">Mailer加持，让博客体验更完善</a></li><li class=""><a href="/archives/172/">基于Chromium的新版Edge体验报告</a></li><li class=""><a href="/archives/169/">NextDNS尝鲜小体验</a></li><li class=""><a href="/archives/153/">初写Wiki的小体验</a></li><li class=""><a href="/archives/147/">PV体验小记录</a></li><li class="current"><a href="/archives/120/">Spotify使用分享/歌单导入</a></li><li class=""><a href="/archives/96/">网课App 小点评</a></li><li class=""><a href="/archives/88/">浅谈DarkMode</a></li><li class=""><a href="/archives/5/">自己作死的一个小经历</a></li><li class=""><a href="/archives/3/">Emoji小功能的修复</a></li><li class=""><a href="/archives/2/">永久链接的一些问题记录</a></li></ul></div>
+
+                    </section>
+                    <section hidden class="sidebar-external-link">
+                        
+                            <div class="external"><span><a href="https://www.imsean.cn">个人主页</a><button class="go-external"><i class="fa fa-external-link"></i></button></span></div>
+                        
+                            <div class="external"><span><a href="https://home.imsean.cn">Notion页</a><button class="go-external"><i class="fa fa-external-link"></i></button></span></div>
+                        
+                            <div class="external"><span><a href="https://github.com/Pems002/Blog">Blog项目仓库</a><button class="go-external"><i class="fa fa-external-link"></i></button></span></div>
+                        
+                    </section>
+                    <section class="maverick">
+                        <div><span style="border: 1px solid #d4dadf;"><a href="https://github.com/AlanDecode/Maverick" target="_blank">Maverick & Kepler</a></span></div>
+                    </section>
+                </aside>
+                <div id="content-wrapper">
+                    <div id="content">
+    <section>
+        <h1 class="post-title">Spotify使用分享/歌单导入</h1>
+        <p class="post-meta">
+            <time>January 21 2020</time>
+            <span class="tags">
                 
-<main>    
-    <section class="ga-section ga-content">
-        <article class="yue">
-            <h1 class="ga-post_title">Spotify使用分享/歌单导入</h1>
-            <span class="ga-post_meta ga-mono">
-                <span>Sean</span>
-                <time>
-                    2020-01-21
-                </time>
+                <span>
+                    <a href="/tag/Spotify/">#Spotify</a>
+                </span>
                 
-                in <a no-style class="category" href="/category/学记/">
-                    学记
-                </a>
+                <span>
+                    <a href="/tag/好物推荐/">#好物推荐</a>
+                </span>
                 
-                
-                <span class="leancloud_visitors" 
-                    id="/archives/120/" 
-                    data-flag-title="Spotify使用分享/歌单导入"> · <i class="leancloud-visitors-count"></i> Views</span>
+                <span>
+                    <a href="/tag/技术向/">#技术向</a>
+                </span>
                 
             </span>
-            <div class="ga-content_body">
-                <p>用Spotify一段时间了（大概半年左右）。刚开始转换过来还么有很习惯。</p>
+        </p>
+        <article class="yue"><p>用Spotify一段时间了（大概半年左右）。刚开始转换过来还么有很习惯。</p>
 <p>最早接触到Spotify应该是当时刚接触国外的社交媒体，然后很多的主播，或者偶尔会在Youtube的广告上看到。当时其实并不知道他其实也是被拉黑了的（直接注册发现死活注册不上，然后就放弃了）。</p>
 <p>大概就半年前吧，网易云/QQ歌单内的一部分歌全部需要开VIP了，当时我因为疯狂迷恋《歌手》，齐豫姐姐，青峰，我的天哪 :@(脸红) ，那段时间耳朵就处于孕期233。后来发现QQ旗下的3家直接买断版权，疯狂榨干我 :@(不高兴) ，但无奈只好开了前半年的QQ音乐付费包，不过那段时间用QQ的时间一下就长了，原来一直沉浸再云村内。</p>
 <p>再后来，歌手也结束了，我就把包月付费包退订了，然后就接触到了Spotify。刚开始发现，这个播放器蛮神奇的，就和国内的流媒体平台都不太一样，你即使不是会员，但歌我还是给你听，只是在其他的辅助功能上给你限制，这点当时直接雷到我了（不得不说被惯习惯了，毕竟国内貌似还没有一家这样做的...），但后来发现版权全，基本除了个别极少数的签约国内流媒体的一些歌手，Spotify基本什么都有，而且原本以为全是外语歌曲，结果发现连《歌手》都在上面有，而且还不付费，哇塞心情简直了！（无奈到写这篇文章的时候，版权被芒果台下架了，可能是迫于QQ的压力吧哎.. ::(犀利) ）直接就收藏了一些专门在国内要付费的，但是无奈不能指定播放，不然直接删网易和QQ。</p>
@@ -107,100 +159,116 @@
 </ol>
 <p>以上就是以网易云为例的导入歌单至Spotify的方法，QQ音乐方法类似，由于系统版本差异，个别方法可能不同。
 Spotify也是我2019最推荐的App之一吧，很棒 :@(害羞)</p>
-<hr><div class="footnotes"><ol><li id="fn_1">歌单导入源码部分由VoidK2提供 <a no-style href="#fn_ref_1">↩</a></li></ol></div>
-            </div>
-        </article>
-        <div id="ga-tags">
-    
-    <span class="ga-tag">
-        <a class="ga-highlight" href="/tag/Spotify/">#Spotify</a>
-    </span>
-    
-    <span class="ga-tag">
-        <a class="ga-highlight" href="/tag/好物推荐/">#好物推荐</a>
-    </span>
-    
-    <span class="ga-tag">
-        <a class="ga-highlight" href="/tag/技术向/">#技术向</a>
-    </span>
-    
-</div>
+<hr><div class="footnotes"><ol><li id="fn_1">歌单导入源码部分由VoidK2提供 <a no-style href="#fn_ref_1">↩</a></li></ol></div></article>
     </section>
 
     
-<section id="ga-content_pager">
-
-    <div class="next">
-        <a class="ga-highlight" href="/archives/128/">最近看番小见解</a>
-        <p class="yue">最近一两个月来，由于各种原因，看番的数量一下高了起来。目前我接触的番剧中，国创与日番可以说是5/5开吧，因为最近日番的佳作其实也蛮多的，但国创也不赖，就在这讲一下我最近看的番以及看法吧。</p>
-    </div>
-
-
-    <div class="prev">
-        <a class="ga-highlight" href="/archives/101/">告别19 踏入新的20</a>
-        <p class="yue">2019，陌生熟悉的数字</p>
-    </div>
-
-</section>
-
+    <section id="content-pager">
+        
+            <div class="next">
+                <a class="card" href="/archives/128/">
+                    <time>January 23 2020</time>
+                    <span>最近看番小见解</span>
+                </a>
+            </div>
+        
+        
+            <div class="prev">
+                <a class="card" href="/archives/101/">
+                    <time>January 02 2020</time>
+                    <span>告别19 踏入新的20</span>
+                </a>
+            </div>
+        
+    </section>
+    
 
     
+        <section id="comments">
+            <div id="vcomments"></div>
+        </section>
         <script>
-            var initValine = function () {
-                new Valine({"enable": true, "el": "#vcomments", "appId": "MW3rej0gI05buDtSpAN15yi2-gzGzoHsz", "appKey": "g8BYYF25hHDXLNaTpptqumwL", "visitor": true, "recordIP": true});
+            window.ValineOpt = {"enable": true, "el": "#vcomments", "appId": "MW3rej0gI05buDtSpAN15yi2-gzGzoHsz", "appKey": "g8BYYF25hHDXLNaTpptqumwL", "visitor": true, "recordIP": true};
+            window.ValineOpt.path = window.location.pathname;
+        </script>
+    
+
+    <script>
+        document.body.classList.add('content');
+        document.body.classList.remove('archive');
+    </script>
+</div>
+                    <footer>
+                        <span>Copyright © 2021 Sean</span>
+                        
+    <span class="leancloud_visitors"
+            id="/archives/120/" 
+            data-flag-title="Spotify使用分享/歌单导入">
+            <i class="fa fa-eye"></i> <i style="font-style: normal" class="leancloud-visitors-count"></i> Views
+        </span>
+
+                        
+                    </footer>
+                </div>
+                
+<aside id="toc-container" class="no-scrollbar">
+    <span><i class="fa fa-align-right"></i> CONTENTS</span>
+    <div id="toc"></div>
+</aside>
+
+            </div>
+        </main>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tocbot@4.10.0/dist/tocbot.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/kepler-ef161b04d5.js"></script>
+        <script>
+            function ExSearchCall(item){
+                if (item && item.length) {
+                    $('.ins-close').click(); // 关闭搜索框
+                    $('input.ins-search-input').val(''); // 清空
+                    let url = item.attr('data-url'); // 获取目标页面 URL
+                    $.pjax({url: url, 
+                        container: '#pjax-container',
+                        fragment: '#pjax-container',
+                        timeout: 8000, }); // 发起一次 PJAX 请求
+                }
             }
         </script>
-        <script defer src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js' onload="initValine()"></script>
-        <div id="vcomments"></div>
-    
 
-</main>
+        <!--Valine-->
+        
+            <script>
+                var initValine = function () {
+                    if (typeof window.ValineOpt === 'object' && $(window.ValineOpt.el).length) {
+                        new Valine(window.ValineOpt);
+                    }
+                }
+            </script>
+            <script async src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js' onload="initValine()"></script>
+        
 
-                <footer class="ga-mono" id="ga-footer">
-                    <section>
-                        <span id="ga-uptime"></span>
-                        <span class="brand">Sean's Blog</span>
-                    </section>
-                    <section>
-                        <p class="copyright">
-                            <span>Copyright © 2021 Sean</span>
-                            <span>Powered by <a no-style href="https://github.com/AlanDecode/Maverick" target="_blank">Maverick & Galileo</a></span>
-                        </p>
-                        <div class="copyright">
-                            <span class="footer-addon">
-                                
-                            </span>
-                            <nav class="social-links">
-                                <ul><li><a class="no-style" title="Weibo" href="https://weibo.com/u/3225834177" target="_blank"><i class="gi gi-weibo"></i>Weibo</a></li><span class="separator">·</span><li><a class="no-style" title="Twitter" href="https://twitter.com/pems002" target="_blank"><i class="gi gi-twitter"></i>Twitter</a></li><span class="separator">·</span><li><a class="no-style" title="instagram" href="https://www.instagram.com/pems002" target="_blank"><i class="gi gi-instagram"></i>instagram</a></li></ul>
-                            </nav>
-                        </div>
-                    </section>
-                    <script>
-                        var site_build_date = "2019-07-30T09:00+08:00"
-                    </script>
-                    <script src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/galileo-dc4baa7cf4.js"></script>
-                </footer>
-            </div>
-        </div>
-    </div>
+        <!--ExSearch-->
+        <script src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/ExSearch/ExSearch-493cb9cd89.js"></script>
+        
+        <!--katex-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/katex.min.css">
+        <script defer src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/katex.min.js"></script>
+        <script>
+        mathOpts = {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "\\[", right: "\\]", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false}
+            ]
+        };
+        </script>
+        <script defer src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/auto-render.min.js" onload="renderMathInElement(document.body, mathOpts);"></script>
 
-    <!--katex-->
-    <script defer src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/katex.min.js"></script>
-    <script>
-    mathOpts = {
-        delimiters: [
-            {left: "$$", right: "$$", display: true},
-            {left: "\\[", right: "\\]", display: true},
-            {left: "$", right: "$", display: false},
-            {left: "\\(", right: "\\)", display: false}
-        ]
-    };
-    </script>
-    <script defer src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/auto-render.min.js" onload="renderMathInElement(document.body, mathOpts);"></script>
-
-    <script src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/ExSearch/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/ExSearch/ExSearch-493cb9cd89.js"></script>
-
-    
+        
     </body>
 </html>
