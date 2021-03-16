@@ -20,7 +20,7 @@ enable_jsdelivr = {
 }
 
 # 站点设置
-site_name = "Sean is here! - Logs"
+site_name = "Logs Hub"
 site_logo = "https://cdn.jsdelivr.net/gh/Pems002/Blog@source/src/static/logo.JPG"
 site_build_date = "2019-07-30T09:00+08:00"
 author = "Sean"
