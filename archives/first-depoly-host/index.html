@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Blog,Sean,Maverick" />
+    <meta name="generator" content="Maverick 1.1" />
+    <meta name="template" content="Galileo" />
+    <link rel="alternate" type="application/rss+xml" title="Sean's Blog &raquo; RSS 2.0" href="/feed/index.xml" />
+    <link rel="alternate" type="application/atom+xml" title="Sean's Blog &raquo; ATOM 1.0" href="/feed/atom/index.xml" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/galileo-6eb818ccb7.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/ExSearch/ExSearch-182e5a8868.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/katex.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700&display=swap">
+    <script>
+        var ExSearchConfig = {
+            root: "",
+            api: "https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/4e32bea4a2cbfe5f58f52103ba78aca7.json"
+        }
+    </script>
+    
+<title>自有ECS配置使用Proxy - Sean's Blog</title>
+<meta name="author" content="Sean" />
+<meta name="description" content="针对首次使用阿里云ECS的设置。" />
+<meta property="og:title" content="自有ECS配置使用Proxy - Sean's Blog" />
+<meta property="og:description" content="针对首次使用阿里云ECS的设置。" />
+<meta property="og:site_name" content="Sean's Blog" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/archives/first-depoly-host/" />
+<meta property="og:image" content="" />
+<meta property="article:published_time" content="2020-04-04T22:21:00-00.00" />
+<meta name="twitter:title" content="自有ECS配置使用Proxy - Sean's Blog" />
+<meta name="twitter:description" content="针对首次使用阿里云ECS的设置。" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="" />
+
+
+    
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@source/src/static/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@source/src/static/favicon.ico" type="image/x-icon" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            <header id="ga-header">
+                <div first>
+                    <aside id="ga-brand">
+                        <h1 class="brand"><a class="no-style" href="/">Sean's Blog</a></h1>
+                        <p>乘风破浪</p>
+                    </aside>
+                </div>
+                <div second id="ga-nav">
+                    <nav class="navs">
+                        <ul><li><a class="ga-highlight" href="/" target="_self">首页</a></li><span class="separator">·</span><li><a class="ga-highlight" href="/archives/" target="_self">归档</a></li><span class="separator">·</span><li><a class="ga-highlight" href="/who-am-i/" target="_self">关于我</a></li><span class="separator">·</span><li><a href="#" target="_self" class="search-form-input ga-highlight">搜索</a></li></ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="wrapper">
+                
+<main>    
+    <section class="ga-section ga-content">
+        <article class="yue">
+            <h1 class="ga-post_title">自有ECS配置使用Proxy</h1>
+            <span class="ga-post_meta ga-mono">
+                <span>Sean</span>
+                <time>
+                    2020-04-04
+                </time>
+                
+                in <a no-style class="category" href="/category/Code/">
+                    Code
+                </a>
+                
+                
+                <span class="leancloud_visitors" 
+                    id="/archives/first-depoly-host/" 
+                    data-flag-title="自有ECS配置使用Proxy"> · <i class="leancloud-visitors-count"></i> Views</span>
+                
+            </span>
+            <div class="ga-content_body">
+                <p>这周，我尝试了一下使用阿里云的ECS主机。在此之前我是没有使用过的。那么首次使用，我做出的操作：</p>
+<h1>更新系统内已有的扩展</h1>
+
+<pre><code>yum update</code></pre>
+<p>再次备注，由于阿里云的机器不纯净，所以<code>yum update -u</code>是无法使用的</p>
+<h1>安装Wget/Unzip/Python/Git等环境</h1>
+
+<pre><code>yum install wget/unzip/python/git</code></pre>
+<p>按需安装。</p>
+<h1>更换内核为Lotserver/ServerSpeeder可用Kernel</h1>
+<p>Kernel版本为3.10.0-229</p>
+
+<pre><code>rpm -ivh http://soft.91yun.org/ISO/Linux/CentOS/kernel/kernel-3.10.0-229.1.2.el7.x86_64.rpm --force</code></pre>
+<h2>也可使用3.10.0-329</h2>
+
+<pre><code>rpm -ivh https://buildlogs.centos.org/c7.1511.00/kernel/20151119220809/3.10.0-327.el7.x86_64/kernel-3.10.0-327.el7.x86_64.rpm --force</code></pre>
+<h1>机器使用169线路时，安装Lotserver/ServerSpeeder</h1>
+
+<pre><code>wget -N --no-check-certificate https://github.com/91yun/serverspeeder/raw/master/serverspeeder.sh &amp;&amp; bash serverspeeder.sh</code></pre>
+<h2>查看当前状态/关闭/开启/实时状态</h2>
+
+<pre><code>service serverSpeeder status/stop/start/stats</code></pre>
+<h1>宝塔环境安装</h1>
+<h2>CentOS环境</h2>
+
+<pre><code>yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh</code></pre>
+<h2>Ubuntu环境</h2>
+
+<pre><code>wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; sudo bash install.sh</code></pre>
+<h2>通用命令</h2>
+<p><code>bt</code></p>
+<h1>V2ray服务安装</h1>
+<p>通用环境</p>
+
+<pre><code>bash &lt;(curl -L -s https://install.direct/go.sh)</code></pre>
+<h2>附属指令及目录</h2>
+<h3>指令</h3>
+<p>控制服务状态 <code>service v2ray start|stop|status|reload|restart|force-reload</code></p>
+<h3>目录</h3>
+<p>配置文件 <code>/etc/v2ray/config.json</code>
+主程序/附属内容 <code>/usr/bin/v2ray/</code></p>
+<h1>YUM关闭自动更新</h1>
+<ul>
+<li>执行 <code>cd /etc/yum</code></li>
+<li>编辑YUM Config文件 <code>vi yum-cron.conf</code></li>
+<li>更改 <code>download_updates = yes</code> =&gt; <code>download_updates = no</code></li>
+</ul>
+<h1>CronTab计划任务实例</h1>
+<ul>
+<li>查看定时执行任务列表 <code>crontab -l</code></li>
+<li>取消实例命令前的#并设置命令 <code>0 */6 * * * reboot</code><blockquote><p>意为每隔6小时执行重启命令</p>
+</blockquote>
+</li>
+<li>保存后装载 <code>crontab /etc/crontab</code></li>
+<li>设置开机启动 <code>systemctl enable crond.service</code></li>
+<li>重启CronTab <code>systemctl restart crond.service</code></li>
+<li>最后重启时间 <code>last reboot</code></li>
+<li>重启日志 <code>who -b</code></li>
+</ul>
+<h1>V2ray标准WS+TLS模式json</h1>
+
+<pre><code>{
+  "inbounds": [{
+    "port": 12345,
+    "listen":"127.0.0.1",
+    "protocol": "vmess",
+    "settings": {
+      "clients": [
+        {
+          "id": "xxxxxxxxx",
+          "level": 1,
+          "alterId": 64
+        }
+      ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "wsSettings": {
+        "path": "/path"
+      }
+    }
+  }],
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {}
+  },{
+    "protocol": "blackhole",
+    "settings": {},
+    "tag": "blocked"
+  }],
+  "routing": {
+    "rules": [
+      {
+        "type": "field",
+        "ip": ["geoip:private"],
+        "outboundTag": "blocked"
+      }
+    ]
+  }
+}</code></pre>
+
+            </div>
+        </article>
+        <div id="ga-tags">
+    
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/tag/VPS/">#VPS</a>
+    </span>
+    
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/tag/阿里云/">#阿里云</a>
+    </span>
+    
+</div>
+    </section>
+
+    
+<section id="ga-content_pager">
+
+    <div class="next">
+        <a class="ga-highlight" href="/archives/gray-style/">站内黑白效果</a>
+        <p class="yue">filter效果代码</p>
+    </div>
+
+
+    <div class="prev">
+        <a class="ga-highlight" href="/archives/about/">关于这里..?</a>
+        <p class="yue">日常BB开头这里是根据熊猫小A所开发的Maverick所构建的一个静态站点。</p>
+    </div>
+
+</section>
+
+
+    
+        <script>
+            var initValine = function () {
+                new Valine({"enable": true, "el": "#vcomments", "appId": "MW3rej0gI05buDtSpAN15yi2-gzGzoHsz", "appKey": "g8BYYF25hHDXLNaTpptqumwL", "visitor": true, "recordIP": true});
+            }
+        </script>
+        <script defer src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js' onload="initValine()"></script>
+        <div id="vcomments"></div>
+    
+
+</main>
+
+                <footer class="ga-mono" id="ga-footer">
+                    <section>
+                        <span id="ga-uptime"></span>
+                        <span class="brand">Sean's Blog</span>
+                    </section>
+                    <section>
+                        <p class="copyright">
+                            <span>Copyright © 2021 Sean</span>
+                            <span>Powered by <a no-style href="https://github.com/AlanDecode/Maverick" target="_blank">Maverick & Galileo</a></span>
+                        </p>
+                        <div class="copyright">
+                            <span class="footer-addon">
+                                
+                            </span>
+                            <nav class="social-links">
+                                <ul><li><a class="no-style" title="Weibo" href="https://weibo.com/u/3225834177" target="_blank"><i class="gi gi-weibo"></i>Weibo</a></li><span class="separator">·</span><li><a class="no-style" title="Twitter" href="https://twitter.com/pems002" target="_blank"><i class="gi gi-twitter"></i>Twitter</a></li><span class="separator">·</span><li><a class="no-style" title="instagram" href="https://www.instagram.com/pems002" target="_blank"><i class="gi gi-instagram"></i>instagram</a></li></ul>
+                            </nav>
+                        </div>
+                    </section>
+                    <script>
+                        var site_build_date = "2019-07-30T09:00+08:00"
+                    </script>
+                    <script src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/galileo-dc4baa7cf4.js"></script>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!--katex-->
+    <script defer src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/katex.min.js"></script>
+    <script>
+    mathOpts = {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "\\[", right: "\\]", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false}
+        ]
+    };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/auto-render.min.js" onload="renderMathInElement(document.body, mathOpts);"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/ExSearch/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/ExSearch/ExSearch-493cb9cd89.js"></script>
+
+    
+    </body>
+</html>

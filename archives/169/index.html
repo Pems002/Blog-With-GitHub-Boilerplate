@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Blog,Sean,Maverick" />
+    <meta name="generator" content="Maverick 1.1" />
+    <meta name="template" content="Galileo" />
+    <link rel="alternate" type="application/rss+xml" title="Sean's Blog &raquo; RSS 2.0" href="/feed/index.xml" />
+    <link rel="alternate" type="application/atom+xml" title="Sean's Blog &raquo; ATOM 1.0" href="/feed/atom/index.xml" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/galileo-6eb818ccb7.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/ExSearch/ExSearch-182e5a8868.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/katex.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700&display=swap">
+    <script>
+        var ExSearchConfig = {
+            root: "",
+            api: "https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/4e32bea4a2cbfe5f58f52103ba78aca7.json"
+        }
+    </script>
+    
+<title>NextDNS尝鲜小体验 - Sean's Blog</title>
+<meta name="author" content="Sean" />
+<meta name="description" content="或许是新一代DNS服务革新？" />
+<meta property="og:title" content="NextDNS尝鲜小体验 - Sean's Blog" />
+<meta property="og:description" content="或许是新一代DNS服务革新？" />
+<meta property="og:site_name" content="Sean's Blog" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/archives/169/" />
+<meta property="og:image" content="https://www.imsean.cn/usr/uploads/2020/03/3974018038.png#vwid=404&vhei=210" />
+<meta property="article:published_time" content="2020-02-29T23:26:00-00.00" />
+<meta name="twitter:title" content="NextDNS尝鲜小体验 - Sean's Blog" />
+<meta name="twitter:description" content="或许是新一代DNS服务革新？" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://www.imsean.cn/usr/uploads/2020/03/3974018038.png#vwid=404&vhei=210" />
+
+
+    
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@source/src/static/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@source/src/static/favicon.ico" type="image/x-icon" />
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            <header id="ga-header">
+                <div first>
+                    <aside id="ga-brand">
+                        <h1 class="brand"><a class="no-style" href="/">Sean's Blog</a></h1>
+                        <p>乘风破浪</p>
+                    </aside>
+                </div>
+                <div second id="ga-nav">
+                    <nav class="navs">
+                        <ul><li><a class="ga-highlight" href="/" target="_self">首页</a></li><span class="separator">·</span><li><a class="ga-highlight" href="/archives/" target="_self">归档</a></li><span class="separator">·</span><li><a class="ga-highlight" href="/who-am-i/" target="_self">关于我</a></li><span class="separator">·</span><li><a href="#" target="_self" class="search-form-input ga-highlight">搜索</a></li></ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="wrapper">
+                
+<main>    
+    <section class="ga-section ga-content">
+        <article class="yue">
+            <h1 class="ga-post_title">NextDNS尝鲜小体验</h1>
+            <span class="ga-post_meta ga-mono">
+                <span>Sean</span>
+                <time>
+                    2020-02-29
+                </time>
+                
+                in <a no-style class="category" href="/category/学记/">
+                    学记
+                </a>
+                
+                
+                <span class="leancloud_visitors" 
+                    id="/archives/169/" 
+                    data-flag-title="NextDNS尝鲜小体验"> · <i class="leancloud-visitors-count"></i> Views</span>
+                
+            </span>
+            <div class="ga-content_body">
+                <p>前些天偶尔在推特上看到Livid转了NextDNS的推文，就想到自己也在Firefox的最新版中DoH的选项中看到了这个可选项，就想了解一下这到底是何方神圣 ::(捂嘴笑)</p>
+<p>打开NextDNS官网(<a href="https://nextdns.io">https://nextdns.io</a>)，即可看到其主打的服务亮点：阻挡广告、追踪，保护隐私等。虽然这些功能其他服务商也有类似的，但是NextDNS的服务可不止这些。它针对每个用户，设置了管理DNS服务的后台页面。每个用户都会有属于自己的配置文件，你可以自定义管理DNS服务。其中，数据分析这个功能其实很强大。它的原理就是收集你设备在使用时访问的域名，通过DNS解析时记录他，然后实时反馈在管理页，这点是其他服务商还没有做到的。<del>可能是我还没有发现</del></p>
+<p>你认为这就完了？NextDNS还提供解析黑名单白名单，家长控制等。假设你不想让百度系干扰你的生活，使用NextDNS服务，在Blocked页面添加域名，即可屏蔽这个域名，它会在访问这个域名是自动屏蔽解析。</p>
+<p>不止于此，NextDNS还在全球布置了32+节点，几乎全球覆盖。无奈的是国内由于政策原因没有进入，当然也能理解，能进来才是奇了怪了，自己砸自己的GFW？ ::(黑线) 当然由于没有覆盖的原因，延迟问题则是没有办法的事，大家可以作为副DNS解析来使用，这样也不错，官网控制台也有详细的设置方法，v4/v6，DoH以及特殊的DNS服务。</p>
+<p>以上就是我针对NextDNS的小体验，我也会持续关注，记录下来，以后分享。</p>
+
+            </div>
+        </article>
+        <div id="ga-tags">
+    
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/tag/新尝试/">#新尝试</a>
+    </span>
+    
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/tag/NextDNS/">#NextDNS</a>
+    </span>
+    
+</div>
+    </section>
+
+    
+<section id="ga-content_pager">
+
+    <div class="next">
+        <a class="ga-highlight" href="/archives/172/">基于Chromium的新版Edge体验报告</a>
+        <p class="yue">抱紧微软爸爸的大腿，抛弃Chrome！</p>
+    </div>
+
+
+    <div class="prev">
+        <a class="ga-highlight" href="/archives/166/">200天纪念😜</a>
+        <p class="yue">Ok，100天又过去了，现在来到了200。</p>
+    </div>
+
+</section>
+
+
+    
+        <script>
+            var initValine = function () {
+                new Valine({"enable": true, "el": "#vcomments", "appId": "MW3rej0gI05buDtSpAN15yi2-gzGzoHsz", "appKey": "g8BYYF25hHDXLNaTpptqumwL", "visitor": true, "recordIP": true});
+            }
+        </script>
+        <script defer src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js' onload="initValine()"></script>
+        <div id="vcomments"></div>
+    
+
+</main>
+
+                <footer class="ga-mono" id="ga-footer">
+                    <section>
+                        <span id="ga-uptime"></span>
+                        <span class="brand">Sean's Blog</span>
+                    </section>
+                    <section>
+                        <p class="copyright">
+                            <span>Copyright © 2021 Sean</span>
+                            <span>Powered by <a no-style href="https://github.com/AlanDecode/Maverick" target="_blank">Maverick & Galileo</a></span>
+                        </p>
+                        <div class="copyright">
+                            <span class="footer-addon">
+                                
+                            </span>
+                            <nav class="social-links">
+                                <ul><li><a class="no-style" title="Weibo" href="https://weibo.com/u/3225834177" target="_blank"><i class="gi gi-weibo"></i>Weibo</a></li><span class="separator">·</span><li><a class="no-style" title="Twitter" href="https://twitter.com/pems002" target="_blank"><i class="gi gi-twitter"></i>Twitter</a></li><span class="separator">·</span><li><a class="no-style" title="instagram" href="https://www.instagram.com/pems002" target="_blank"><i class="gi gi-instagram"></i>instagram</a></li></ul>
+                            </nav>
+                        </div>
+                    </section>
+                    <script>
+                        var site_build_date = "2019-07-30T09:00+08:00"
+                    </script>
+                    <script src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/galileo-dc4baa7cf4.js"></script>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!--katex-->
+    <script defer src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/katex.min.js"></script>
+    <script>
+    mathOpts = {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "\\[", right: "\\]", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false}
+        ]
+    };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/auto-render.min.js" onload="renderMathInElement(document.body, mathOpts);"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/ExSearch/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Pems002/Blog@gh-pages/assets/ExSearch/ExSearch-493cb9cd89.js"></script>
+
+    
+    </body>
+</html>
