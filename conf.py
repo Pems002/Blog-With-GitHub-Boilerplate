@@ -9,9 +9,9 @@ build_dir = "../dist/"
 index_page_size = 10
 archives_page_size = 20
 template = {
-    "name": "Galileo",
+    "name": "Kepler",
     "type": "git",
-    "url": "https://github.com/Pems002/Maverick-Theme-Galileo.git",
+    "url": "https://github.com/Alandecode/Maverick-Theme-Kepler.git",
     "branch": "latest"
 }
 enable_jsdelivr = {
@@ -20,13 +20,13 @@ enable_jsdelivr = {
 }
 
 # 站点设置
-site_name = "Sean's Blog"
+site_name = "Sean is here! - Logs"
 site_logo = "https://cdn.jsdelivr.net/gh/Pems002/Blog@source/src/static/logo.JPG"
 site_build_date = "2019-07-30T09:00+08:00"
 author = "Sean"
 email = "admin@imsean.cn"
 author_homepage = "https://www.imsean.cn"
-description = "乘风破浪"
+description = "Find out way"
 key_words = ['Blog', 'Sean', 'Maverick']
 language = 'zh-CN'
 external_links = [
