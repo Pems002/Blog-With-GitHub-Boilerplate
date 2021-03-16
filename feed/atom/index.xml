@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>Sean is here! - Logs</title><updated>2021-03-16T04:07:57.505419+08:06</updated><author><name>Sean</name><email>admin@imsean.cn</email></author><link href="/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/Pems002/Blog@source/src/static/logo.JPG</logo><subtitle>Find out way</subtitle><entry><id>/archives/happy-seventeen-brithday/</id><title>Happy Seventeen Birthday！</title><updated>2021-03-16T04:07:57.505738+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;p&gt;拾期？拾七？十七！Bingo！&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>Logs Hub</title><updated>2021-03-16T05:16:27.666540+08:06</updated><author><name>Sean</name><email>admin@imsean.cn</email></author><link href="/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/Pems002/Blog@source/src/static/logo.JPG</logo><subtitle>Find out way</subtitle><entry><id>/archives/happy-seventeen-brithday/</id><title>Happy Seventeen Birthday！</title><updated>2021-03-16T05:16:27.666940+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;p&gt;拾期？拾七？十七！Bingo！&lt;/p&gt;
 &lt;p&gt;原来都很看重这一天，但现在都释怀了，但还是抑制不住内心的喜悦呢。 :@(脸红)&lt;/p&gt;
 &lt;p&gt;17年前的今天我出生了，代表着这个世界上又多了一个小可爱嘻嘻&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;未来请多指教，17岁的Sean，加油&lt;/strong&gt;&lt;/p&gt;
-</content><link href="/archives/happy-seventeen-brithday/" rel="alternate"/><published>2020-03-13T00:00:00+08:06</published></entry><entry><id>/archives/196/</id><title>关于…最近？</title><updated>2021-03-16T04:07:57.505714+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;p&gt;感觉又拖了好久才写文章，最近也是在没什么新鲜的内容，而且就算闲谈也实在没什么话说，所以就一直没更新… :@(深思)&lt;/p&gt;
+</content><link href="/archives/happy-seventeen-brithday/" rel="alternate"/><published>2020-03-13T00:00:00+08:06</published></entry><entry><id>/archives/196/</id><title>关于…最近？</title><updated>2021-03-16T05:16:27.666915+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;p&gt;感觉又拖了好久才写文章，最近也是在没什么新鲜的内容，而且就算闲谈也实在没什么话说，所以就一直没更新… :@(深思)&lt;/p&gt;
 &lt;h2&gt;关于学习方面…？&lt;/h2&gt;
 &lt;p&gt;好吧其实最近还是和往常一样。疫情过后，开始了整节课都要带着口罩的时光，在我看来真的很难受，因为说话或者吃东西就不方便了（众所周知我是一个吃货界冉冉升起的新星 :@(尴尬) ）每天只上半天课，下半天在家用钉钉上。其实说实在的，我认为在学校相较于在家我学到的东西更少了，为何这样说呢，综合下来有这么几点：&lt;/p&gt;
 &lt;blockquote&gt;&lt;p&gt;1.环境不太行。吵杂的环境（尤其是疯狂开黑王者吃鸡的同学，咳咳）
@@ -36,7 +36,7 @@
 其次也真的没什么想说的，主要是还要上课，所以以后可能不会勤更新了，因为学业在身，所以自己立下的200天Flag也没办法了。
 还有就是我的谷歌云由于我的不理智，本来可以撑到7月满一年的，结果2月用了$70左右的试用，导致我的机器都只能用最次的，流量还很贵，哎…自作孽果然不可活阿！ ::(泪) 等到哪天彻底用完了，我可能连Blog都架不起了，但我会找到合适的主机，希望能把，把环境在提一个档次！那这次就到这里吧！&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;See you Next Time！&lt;/strong&gt;&lt;/p&gt;
-</content><link href="/archives/196/" rel="alternate"/><published>2020-03-29T22:19:00+08:06</published></entry><entry><id>/archives/about/</id><title>关于这里..?</title><updated>2021-03-16T04:07:57.505690+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;h2&gt;日常BB开头&lt;/h2&gt;&lt;p&gt;这里是根据熊猫小A所开发的Maverick所构建的一个静态站点。&lt;/p&gt;
+</content><link href="/archives/196/" rel="alternate"/><published>2020-03-29T22:19:00+08:06</published></entry><entry><id>/archives/about/</id><title>关于这里..?</title><updated>2021-03-16T05:16:27.666889+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;h2&gt;日常BB开头&lt;/h2&gt;&lt;p&gt;这里是根据熊猫小A所开发的Maverick所构建的一个静态站点。&lt;/p&gt;
 &lt;p&gt;我给他起名为: &lt;strong&gt;Logs Hub&lt;/strong&gt;。它托管在&lt;strong&gt;Github&lt;/strong&gt;上，所以你也可以在我的&lt;a href="https://github.com/Pems002/Wiki"&gt;Github页面&lt;/a&gt;看到。&lt;/p&gt;
 &lt;p&gt;由于网络问题，我访问Github上也有很大的阻碍&lt;del&gt;因为被SNI了&lt;/del&gt;故我使用Cloudflare的DNS服务。站内的所有Source文件我将会使用Jsdelivr，保证访问速度。&lt;/p&gt;
 &lt;p&gt;由于在Github托管，除非我删库，不然这个站点基本不会消失。&lt;/p&gt;
@@ -44,7 +44,7 @@
 &lt;h2&gt;结&lt;/h2&gt;&lt;p&gt;关于这个站点就这么多，SEO懒得搞了，反正也没想的让别人看，只是我自己留着写写笔记。有任何问题可以访问我的&lt;a href="https://www.imsean.cn"&gt;主站&lt;/a&gt;，日常也在那里。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;联系我？&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Email: admin@imsean.cn&lt;/p&gt;
-</content><link href="/archives/about/" rel="alternate"/><published>2020-03-31T19:43:00+08:06</published></entry><entry><id>/archives/first-depoly-host/</id><title>自有ECS配置使用Proxy</title><updated>2021-03-16T04:07:57.505666+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;p&gt;这周，我尝试了一下使用阿里云的ECS主机。在此之前我是没有使用过的。那么首次使用，我做出的操作：&lt;/p&gt;
+</content><link href="/archives/about/" rel="alternate"/><published>2020-03-31T19:43:00+08:06</published></entry><entry><id>/archives/first-depoly-host/</id><title>自有ECS配置使用Proxy</title><updated>2021-03-16T05:16:27.666864+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;p&gt;这周，我尝试了一下使用阿里云的ECS主机。在此之前我是没有使用过的。那么首次使用，我做出的操作：&lt;/p&gt;
 &lt;h1&gt;更新系统内已有的扩展&lt;/h1&gt;
 
 &lt;pre&gt;&lt;code&gt;yum update&lt;/code&gt;&lt;/pre&gt;
@@ -144,14 +144,14 @@
     ]
   }
 }&lt;/code&gt;&lt;/pre&gt;
-</content><link href="/archives/first-depoly-host/" rel="alternate"/><published>2020-04-04T22:21:00+08:06</published></entry><entry><id>/archives/gray-style/</id><title>站内黑白效果</title><updated>2021-03-16T04:07:57.505642+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;p&gt;全站实现黑白效果：&lt;/p&gt;
+</content><link href="/archives/first-depoly-host/" rel="alternate"/><published>2020-04-04T22:21:00+08:06</published></entry><entry><id>/archives/gray-style/</id><title>站内黑白效果</title><updated>2021-03-16T05:16:27.666837+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;p&gt;全站实现黑白效果：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;style&amp;gt;
     body {
       filter: grayscale(100%);
     }
 &amp;lt;/style&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-</content><link href="/archives/gray-style/" rel="alternate"/><published>2020-04-07T20:07:00+08:06</published></entry><entry><id>/archives/214/</id><title>Typecho插件分享</title><updated>2021-03-16T04:07:57.505617+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;h2&gt;前言&lt;/h2&gt;
+</content><link href="/archives/gray-style/" rel="alternate"/><published>2020-04-07T20:07:00+08:06</published></entry><entry><id>/archives/214/</id><title>Typecho插件分享</title><updated>2021-03-16T05:16:27.666806+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;h2&gt;前言&lt;/h2&gt;
 &lt;p&gt;其实一直都想做这个分享了，但是我觉得我使用的插件其实也不完善，有些功能上还是又很多欠缺的地方的，所以一直没做。
 但是由于最近已经很久写Blog了，所以让我又想到了这个主题。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;那么这次我就来分享目前我目前用的Typecho插件&lt;/strong&gt;&lt;/p&gt;
@@ -180,7 +180,7 @@
 链接：&lt;a href="http://blog.iplayloli.com/typecho-plugin-shortlinks.html"&gt;ShortLinks&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;结尾&lt;/h2&gt;
 &lt;p&gt;这次写的比较潦草，而且没什么逻辑，就是纯插件分享，本来想把使用方法也写进来，但是那样写就得要长篇大论了，所以就简单的分享一下吧 :@(傻笑)&lt;/p&gt;
-</content><link href="/archives/214/" rel="alternate"/><published>2020-04-17T21:16:00+08:06</published></entry><entry><id>/archives/netease-music-http-proxy/</id><title>网易云音乐HTTP代理</title><updated>2021-03-16T04:07:57.505593+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;h2&gt;不推荐使用的Proxy代理服务！！&lt;/h2&gt;
+</content><link href="/archives/214/" rel="alternate"/><published>2020-04-17T21:16:00+08:06</published></entry><entry><id>/archives/netease-music-http-proxy/</id><title>网易云音乐HTTP代理</title><updated>2021-03-16T05:16:27.666727+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;h2&gt;不推荐使用的Proxy代理服务！！&lt;/h2&gt;
 &lt;p&gt;网易云音乐实现下线歌曲重新加载（会显示已保存至网盘），VIP付费可续听&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
@@ -190,7 +190,7 @@ function FindProxyForURL(url, host) {
     }
     return 'DIRECT;'
 }&lt;/code&gt;&lt;/pre&gt;
-</content><link href="/archives/netease-music-http-proxy/" rel="alternate"/><published>2020-04-18T11:42:00+08:06</published></entry><entry><id>/archives/Access-to-Github/</id><title>正常访问/加速Github</title><updated>2021-03-16T04:07:57.505568+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;p&gt;由于一些政策原因，在我所处地区不允许访问任何Github网站。&lt;/p&gt;
+</content><link href="/archives/netease-music-http-proxy/" rel="alternate"/><published>2020-04-18T11:42:00+08:06</published></entry><entry><id>/archives/Access-to-Github/</id><title>正常访问/加速Github</title><updated>2021-03-16T05:16:27.666700+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;p&gt;由于一些政策原因，在我所处地区不允许访问任何Github网站。&lt;/p&gt;
 &lt;p&gt;管局也是很迷，居然将IP指向了203开头的某知名网站在国内的知名IP...（而且我看全国Ping只有我们地区沙雕一般解析到了这个IP）&lt;del&gt;人类迷惑行为大赏哈哈哈哈&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;所以说一直以来我想访问Github要么使用代理，要么好像也没其他办法。但是这几天我一想，不就是DNS污染吗，直接本地校正解析不就好了吗，而且我发现其实IP并没有被墙，这点管局还是很良心的。&lt;/p&gt;
 &lt;p&gt;但个别比如Raw，图片使用了FASTLY的CDN，所以还是没有办法加载出来，但是这已经很好了，起码主站可以正常访问。&lt;/p&gt;
@@ -216,7 +216,7 @@ function FindProxyForURL(url, host) {
 199.232.68.133 raw.githubusercontent.com&lt;/code&gt;&lt;/pre&gt;
 &lt;blockquote&gt;&lt;p&gt;有些好像还是不能解析出来，可能真的SNI阻断了??&lt;/p&gt;
 &lt;/blockquote&gt;
-</content><link href="/archives/Access-to-Github/" rel="alternate"/><published>2020-04-19T13:21:00+08:06</published></entry><entry><id>/archives/quantumult-toggle-vpn-ico/</id><title>Quantumult-VPN标识显示/隐藏</title><updated>2021-03-16T04:07:57.505538+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;p&gt;距离上次更新已经过去90+天，一直使用Quantumult，却将近半年未更新，难道是没什么好更新的？？&lt;/p&gt;
+</content><link href="/archives/Access-to-Github/" rel="alternate"/><published>2020-04-19T13:21:00+08:06</published></entry><entry><id>/archives/quantumult-toggle-vpn-ico/</id><title>Quantumult-VPN标识显示/隐藏</title><updated>2021-03-16T05:16:27.666670+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;p&gt;距离上次更新已经过去90+天，一直使用Quantumult，却将近半年未更新，难道是没什么好更新的？？&lt;/p&gt;
 &lt;h1&gt;正文&lt;/h1&gt;
 &lt;p&gt;朋友在自己的iPhone上首次使用Quantumult时，发现开启VPN后却不显示VPN的标识，还以为是手机问题，就一直很困扰。&lt;/p&gt;
 &lt;p&gt;但是今天看到在港区的Quantumult的评论区找到了官方回复的VPN标识不显示的问题，然后发现貌似是新版本更新后默认既关闭了图表显示，故记录一下。&lt;/p&gt;
@@ -227,7 +227,7 @@ function FindProxyForURL(url, host) {
 &lt;pre&gt;&lt;code&gt;quantumult://settings?toggle_vpn_status_icon&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;或点击旁边的直达URL即可： &lt;a href="quantumult://settings?toggle_vpn_status_icon" title="设置URL"&gt;点我即可&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;点击不行的话，可能是因为超链接只支持http，由于是应用的内部跳转链接，所以不行复制到浏览器里打开，跳转应用即可。&lt;/p&gt;
-</content><link href="/archives/quantumult-toggle-vpn-ico/" rel="alternate"/><published>2020-05-10T13:12:00+08:06</published></entry><entry><id>/archives/recent-overview/</id><title>近期的概况</title><updated>2021-03-16T04:07:57.505485+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;p&gt;由于我的GCP 300$试用已经结束了，所以我的主站机器也就相应的到期了，还没有想好到底是试用虚拟主机（阿里/腾讯），还是重新买一台机器，脱离白嫖，走向&lt;del&gt;高贵的&lt;/del&gt;付费用户&lt;/p&gt;
+</content><link href="/archives/quantumult-toggle-vpn-ico/" rel="alternate"/><published>2020-05-10T13:12:00+08:06</published></entry><entry><id>/archives/recent-overview/</id><title>近期的概况</title><updated>2021-03-16T05:16:27.666611+00:00</updated><author><name>Sean</name><email>admin@imsean.cn</email><uri>https://www.imsean.cn</uri></author><content>&lt;p&gt;由于我的GCP 300$试用已经结束了，所以我的主站机器也就相应的到期了，还没有想好到底是试用虚拟主机（阿里/腾讯），还是重新买一台机器，脱离白嫖，走向&lt;del&gt;高贵的&lt;/del&gt;付费用户&lt;/p&gt;
 &lt;p&gt;目前我比较倾向后者，因为我的Proxy服务也是用的GCP，现在断了后都开始回到了2018年初次出墙的时间，在网络上寻找白嫖链接...&lt;/p&gt;
 &lt;p&gt;目前的想法6/7月争取购买搬瓦工的主机，49.99$的年付主机，虽然只有CN2 GT但但好于我现在用的这些节点&lt;dek&gt;一言难尽！&amp;lt;/del&amp;gt;&lt;/p&gt;
 &lt;p&gt;主站又挂了，好不容易SEO权重好了点，现在又挂了，呕吼完蛋....&lt;/p&gt;
