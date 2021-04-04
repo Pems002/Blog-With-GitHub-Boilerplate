@@ -16,12 +16,12 @@ template = {
 }
 enable_jsdelivr = {
     "enabled": True,
-    "repo": "Pems002/Blog@gh-pages"
+    "repo": "Pems002/Logs@gh-pages"
 }
 
 # 站点设置
 site_name = "Logs Hub"
-site_logo = "https://cdn.jsdelivr.net/gh/Pems002/Blog@source/src/static/logo.JPG"
+site_logo = "https://cdn.jsdelivr.net/gh/Pems002/Logs@source/src/static/logo.JPG"
 site_build_date = "2019-07-30T09:00+08:00"
 author = "Sean"
 email = "admin@imsean.cn"
@@ -41,9 +41,9 @@ external_links = [
         "brief": "Notion Work Space."
     },
     {
-        "name": "Blog项目仓库",
-        "url": "https://github.com/Pems002/Blog",
-        "brief": "托管在Github上的项目。"
+        "name": "Logs项目仓库",
+        "url": "https://github.com/Pems002/Logs",
+        "brief": "Powered by Maverick."
     }
 ]
 nav = [
@@ -83,7 +83,7 @@ social_links = [
 ]
 
 valine = {
-    "enable": True,
+    "enable": false,
     "el": '#vcomments',
     "appId": "MW3rej0gI05buDtSpAN15yi2-gzGzoHsz",
     "appKey": "g8BYYF25hHDXLNaTpptqumwL",
@@ -92,8 +92,8 @@ valine = {
 }
 
 head_addon = r'''
-<link rel="icon" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@source/src/static/favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Pems002/Blog@source/src/static/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/Pems002/Logs@source/src/static/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Pems002/Logs@source/src/static/favicon.ico" type="image/x-icon" />
 <meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
 '''
