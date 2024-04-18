@@ -1,0 +1,29 @@
+---
+layout: post
+title: 自建Bitwarden(Vaultarden)更新版本
+slug: vaultwarden-update
+date: 2024-04-18 10:23
+status: publish
+author: Sean
+categories: 
+  - 默认分类
+tags: 
+  - 
+excerpt: 
+---
+使用自建的Bitwarden服务（Vaultwarden）已经有一段时间了，按照开发组一月一更的惯例（PS今年3月缺发了2次Release，第二次就是现在的1.30.5，应该是上个版本的小修复），
+为了保障自己的密码库安全，及时更新并装载最新的程序就显得很有必要了。
+
+本篇介绍的就是使用官方推荐的部署方法Docker部署后如何将镜像更新至最新并在容器中部署最新版本。
+
+# 正文
+朋友在自己的iPhone上首次使用Quantumult时，发现开启VPN后却不显示VPN的标识，还以为是手机问题，就一直很困扰。
+
+但是今天看到在港区的Quantumult的评论区找到了官方回复的VPN标识不显示的问题，然后发现貌似是新版本更新后默认既关闭了图表显示，故记录一下。
+
+# 如何做？
+其实很简单，只需使用应用内部的默认设置URL激活即可（软件内部没有任何设置ico方面的开关emmm）
+## Code
+```
+quantumult://settings?toggle_vpn_status_icon
+```
